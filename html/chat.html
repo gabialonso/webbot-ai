@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>WeBot - Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/matrix.css" />
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <canvas id="matrixCanvas"></canvas>
+  
+  <nav class="p-6 flex justify-between">
+    <div class="text-xl font-bold">WeBot</div>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="chat.html" class="hover:underline">Chat</a>
+    </div>
+  </nav>
+
+  <main class="flex-1 grid place-items-center p-4">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-8">Choose a model</h1>
+      <form id="chat-form" class="w-80 space-y-4">
+        <select class="w-full p-3 border text-center">
+          <option value="" disabled selected>Select...</option>
+          <option value="gpt3.5">GPT-3.5</option>
+          <option value="gpt4">GPT-4</option>
+          <option value="claude">Claude</option>
+          <option value="llama">Llama 2</option>
+        </select>
+        <button type="submit" class="w-full bg-black text-white p-3 hover:bg-gray-800">
+          Start
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="p-4 text-sm text-center">
+    <a href="https://github.com/gabialonso/webbot-ai">@gabialonso on GitHub.</a>
+  </footer>
+
+  <script src="../js/matrix.js"></script>
+</body>
+</html>
