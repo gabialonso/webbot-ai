@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="../css/matrix.css" />
 </head>
 
-<body class="bg-white text-black flex flex-col min-h-screen">
+<body class="min-h-screen flex flex-col">
   <canvas id="matrixCanvas"></canvas>
   
-  <nav class="text-black px-6 py-4 flex justify-between">
+  <nav class="p-6 flex justify-between">
     <div class="text-xl font-bold">WeBot</div>
     <div class="space-x-4">
       <a href="index.html" class="hover:underline">Home</a>
@@ -23,15 +23,17 @@
     </div>
   </nav>
 
-  <header class="flex-1 flex flex-col items-center justify-center px-4 text-center">
-    <h1 class="text-4xl font-bold mb-4">WeBot</h1>
-    <p class="mb-6 text-lg text-gray-700">The best free AI models, in one place.</p>
-    <a href="chat.html" class="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">
-      Start Chat
-    </a>
+  <header class="flex-1 grid place-items-center text-center p-4">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">WeBot</h1>
+      <p class="mb-6 text-lg text-gray-700">The best free AI models, in one place.</p>
+      <a href="chat.html" class="bg-black text-white px-6 py-3 hover:bg-gray-800">
+        Start Chat
+      </a>
+    </div>
   </header>
 
-  <footer class="text-center p-4 text-sm text-black">
+  <footer class="p-4 text-sm text-center">
     <a href="https://github.com/gabialonso/webbot-ai">@gabialonso on GitHub.</a>
   </footer>
 
