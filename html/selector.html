@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -14,7 +15,7 @@
 
 <body class="min-h-screen flex flex-col">
   <canvas id="matrixCanvas"></canvas>
-  
+
   <nav class="p-6 flex justify-between">
     <a href=index.html class="text-xl font-bold">WeBot</a>
     <div class="space-x-4">
@@ -26,18 +27,18 @@
   <main class="flex-1 grid place-items-center p-4">
     <div class="text-center">
       <h1 class="text-4xl font-bold mb-6">Choose a model</h1>
-      
-      <form id="chat-form" class="w-80">
-        <select class="w-full p-3 mb-8 border text-center">
+
+      <form id="model-form" action="chat.html" method="GET" class="w-80">
+        <select id="modelSelector" class="w-full p-3 mb-8 border text-center" name="model">
           <option value="" disabled selected>Select...</option>
-            <option value="gpt3.5">GPT-3.5</option>
-            <option value="gpt4">GPT-4</option>
-            <option value="claude">Claude</option>
-            <option value="llama">Llama 2</option>
+          <option value="gpt3.5">GPT-3.5</option>
+          <option value="gpt4">GPT-4</option>
+          <option value="claude">Claude</option>
+          <option value="llama">Llama 2</option>
         </select>
-        <a href="chat.html" class="bg-black text-white px-6 py-3 hover:bg-gray-800">
+        <button type="submit" class="bg-black text-white px-6 py-3 hover:bg-gray-800 focus:outline-none">
           Select
-        </a>
+        </button>
       </form>
     </div>
   </main>
@@ -48,4 +49,5 @@
 
   <script src="../js/matrix.js"></script>
 </body>
+
 </html>
