@@ -25,18 +25,19 @@
 
   <main class="flex-1 grid place-items-center p-4">
     <div class="text-center">
-      <h1 class="text-4xl font-bold mb-8">Choose a model</h1>
-      <form id="chat-form" class="w-80 space-y-4">
-        <select class="w-full p-3 border text-center">
+      <h1 class="text-4xl font-bold mb-6">Choose a model</h1>
+      
+      <form id="chat-form" class="w-80">
+        <select class="w-full p-3 mb-8 border text-center">
           <option value="" disabled selected>Select...</option>
-          <option value="gpt3.5">GPT-3.5</option>
-          <option value="gpt4">GPT-4</option>
-          <option value="claude">Claude</option>
-          <option value="llama">Llama 2</option>
+            <option value="gpt3.5">GPT-3.5</option>
+            <option value="gpt4">GPT-4</option>
+            <option value="claude">Claude</option>
+            <option value="llama">Llama 2</option>
         </select>
-        <button type="submit" class="w-full bg-black text-white p-3 hover:bg-gray-800">
-          Start
-        </button>
+        <a href="chat.html" class="bg-black text-white px-6 py-3 hover:bg-gray-800">
+          Select
+        </a>
       </form>
     </div>
   </main>
